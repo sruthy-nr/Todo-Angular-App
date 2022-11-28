@@ -6,23 +6,23 @@
             <div class="row g-3 mt-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">USER ID</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="uid" [(ngModel)]="uid" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">ID</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="id" [(ngModel)]="id" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">TITLE</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="title" [(ngModel)]="title" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">COMPLETED STATUS</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="cs" [(ngModel)]="cs" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label"></label>
-                    <a href="#" class="btn btn-warning">SUBMIT</a>
+                    <button (click)="add()" class="btn btn-warning">SUBMIT</button>
                 </div>
             </div>
         </div>
